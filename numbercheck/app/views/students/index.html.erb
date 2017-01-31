@@ -1,0 +1,23 @@
+
+	<h1>記名システム</h1>
+
+	<form action="">
+	名前：
+	<input type="text" id="a" name="name" value="">
+	出席番号:
+	<input type="text" id="b" name="number" value="">
+	<input type='button' id="submit" value="提交">
+</form>
+
+<table>
+  <tr>
+    <th>氏名</th>
+    <th>番号</th>
+  </tr>
+  <% @students.each do |student| %>
+  <tr>
+    <td><%= student.name %></td>
+    <td><%= student.number %></td>
+  </tr>
+  <% end %>
+</table>
